@@ -1,0 +1,31 @@
+example.example_controller_display:
+  path: '/example'
+  defaults:
+    _controller: '\Drupal\example\Controller\exampleController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+example.example_form:
+  path: '/example/form/example'
+  defaults:
+    _form: '\Drupal\example\Form\exampleForm'
+    _title: 'exampleForm'
+  requirements:
+    _access: 'TRUE'
+
+example.display_table_controller_display:
+  path: '/example/hello/table'
+  defaults:
+    _controller: '\Drupal\example\Controller\DisplayTableController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+# example.delete_form:
+#   path: '/example/form/delete/{cid}'
+#   defaults:
+#     _form: '\Drupal\example\Form\DeleteForm'
+#     _title: 'DeleteForm'
+#   requirements:
+#     _access: 'TRUE
